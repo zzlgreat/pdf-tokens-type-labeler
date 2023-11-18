@@ -1,5 +1,6 @@
 from huggingface_hub import hf_hub_download
-
+import os
+os.environ['HF_ENDPOINT'] = 'https://hf-mirror.com'
 pdf_tokens_type_model = hf_hub_download(
     repo_id="HURIDOCS/pdf-segmetation",
     filename="pdf_tokens_type.model",
